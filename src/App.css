@@ -1,38 +1,268 @@
+.pro-sidebar-header h1 {
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0px;
+  color: #fff;
+  text-align: center;
+}
+.pro-sidebar-header h1 img {
+  width: 90px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  color: #353535;
+}
+
+.charing {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+#root,
 .App {
+  height: 100%;
+}
+
+.pro-sidebar > .pro-sidebar-inner {
+  background: #01b4ae !important;
+}
+
+.pro-sidebar > .pro-sidebar-inner > .pro-sidebar-layout .pro-sidebar-header {
+  border-bottom: transparent !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item {
+  color: #fff;
+  font-size: 18px;
+}
+
+.pro-sidebar
+  .pro-menu
+  .pro-menu-item
+  > .pro-inner-item
+  > .pro-icon-wrapper
+  .pro-icon {
+  font-size: 24px;
+}
+
+.pro-sidebar {
+  color: #fff;
+}
+.pro-sidebar
+  .pro-menu.shaped
+  .pro-menu-item
+  > .pro-inner-item
+  > .pro-icon-wrapper {
+  background-color: transparent !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item:hover {
+  background: rgb(255 255 255 / 23%);
+  color: #fff !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item a {
+  color: #fff;
+}
+
+.pro-sidebar-header h1 {
+  border-bottom: 1px solid rgb(255 255 255);
+}
+
+.user {
+  width: 100%;
+  border-bottom: 1px solid rgb(255 255 255);
+
+  box-sizing: border-box;
+  display: table;
+}
+
+img {
+  max-width: 100%;
+}
+
+.user .pro-icon-wrapper img {
+  border-radius: 100%;
+}
+
+.pro-sidebar
+  .pro-menu
+  .pro-menu-item.pro-sub-menu
+  > .pro-inner-item
+  > .pro-arrow-wrapper
+  .pro-arrow {
+  border-color: #fff !important
+  ;
+}
+
+.user .pro-menu .pro-menu-item > .pro-inner-item:focus {
+  color: #fff !important;
+}
+
+.user .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
+  background: transparent !important;
+}
+
+.user .pro-inner-item:before {
+  display: none !important;
+}
+
+.user ul {
+  padding: 0px !important;
+}
+
+.user ul .react-slidedown.pro-inner-list-item {
+  padding-left: 0px !important;
+}
+
+.user ul .react-slidedown.pro-inner-list-item .pro-inner-item {
+  padding-left: 60px !important;
+}
+
+.charing {
+  height: 100%;
+}
+
+.top-header {
+  background: #01b4ae;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.stations {
+  display: inline-block;
+  background: rgb(255 255 255 / 23%);
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.stations i {
+  margin-right: 5px;
+}
+
+.connects {
+  display: table;
+}
+
+.first-co {
+  margin-right: 10px;
+  float: left;
+  position: relative;
+}
+
+.acricle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid #01b4ae;
+  border-radius: 100%;
+  color: #01b4ae;
+  float: left;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+
+.first-co strong {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  float: left;
+  margin-left: -15px;
+}
+
+.first-co strong i {
+  font-size: 30px;
+  color: #01b4ae;
+}
+
+.green {
+  color: #01b4ae;
+}
+
+.green i {
+  margin-right: 5px;
+}
+
+.instant-td {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.instant-td .progress {
+  height: 0.3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.puple {
+  font-size: 30px;
+  color: #01b4ae;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.MuiTableCell-root {
+  font-family: inherit !important;
 }
 
-.App-link {
-  color: #61dafb;
+.MuiTableRow-root.MuiTableRow-hover:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.red {
+  color: #dc3545 !important;
+}
+
+.first-co {
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 0.3rem;
+  background: #cbcbcb;
+  border-radius: 0;
+  box-shadow: none;
+
+  overflow: visible;
+  position: relative;
+}
+
+.progress .progress-bar {
+  box-shadow: none;
+  position: relative;
+  -webkit-animation: animate-positive 2s;
+  animation: animate-positive 2s;
+  overflow: inherit;
+}
+
+.progress .progress-value {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  position: absolute;
+  top: -14px;
+  right: 0;
+}
+
+.acricle.fullcolor {
+  background: #01b4ae;
+  color: #fff;
 }
